@@ -40,6 +40,13 @@ SUMMARY_NAMES = {
     "Glass Box": "Glass",
 }
 
+SUMMARY_EMOJIS = {
+    "Food 23L": "🍽️",
+    "General 180L": "🗑️",
+    "Recycle 240L": "♻️",
+    "Glass Box": "🫙",
+}
+
 
 @dataclass
 class Form:
@@ -322,7 +329,7 @@ def generate_ics(events: dict[date, set[str]], generated_at: datetime) -> str:
         "PRODID:-//Codex//NFDC Bin Collections//EN",
         "CALSCALE:GREGORIAN",
         "METHOD:PUBLISH",
-        f"X-WR-CALNAME:NFDC Bin Collections - {AREA_NAME}",
+        f"X-WR-CALNAME:♻️ NFDC Bin Collections - {AREA_NAME}",
         f"X-WR-TIMEZONE:{TIMEZONE_ID}",
     ]
 
@@ -330,7 +337,10 @@ def generate_ics(events: dict[date, set[str]], generated_at: datetime) -> str:
         containers = sort_containers(events[collection_date])
         if not containers:
             continue
-        summary = "Bins: " + ", ".join(SUMMARY_NAMES.get(item, item) for item in containers)
+        emoji_prefix = "".join(SUMMARY_EMOJIS.get(item, "") for item in containers)
+        summary = f"{emoji_prefix} Bins: " + ", ".join(
+            SUMMARY_NAMES.get(item, item) for item in containers
+        )
         descriptions = [
             f"{container} - {CONTAINER_DETAILS.get(container, 'Collection')}"
             for container in containers

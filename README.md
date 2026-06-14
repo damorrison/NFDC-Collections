@@ -13,6 +13,7 @@ https://damorrison.github.io/NFDC-Collections/nfdc_bin_collections.ics
 Calendar format:
 
 - one combined event per collection day
+- event titles include container emojis where supported by the calendar app
 - 07:00 to 08:00 Europe/London
 - display reminder 13 hours before collection
 - area shown as `The Hummicks`
