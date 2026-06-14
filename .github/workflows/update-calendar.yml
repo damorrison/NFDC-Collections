@@ -1,0 +1,52 @@
+name: Update bin collection calendar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "18 5 * * 1"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate calendar
+        run: python scripts/update_calendar.py --months 3 --output nfdc_bin_collections.ics
+
+      - name: Commit updated calendar
+        run: |
+          if ! git diff --quiet -- nfdc_bin_collections.ics; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add nfdc_bin_collections.ics
+            git commit -m "Update bin collection calendar"
+            git push
+          fi
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p _site
+          cp nfdc_bin_collections.ics _site/
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - uses: actions/deploy-pages@v4
