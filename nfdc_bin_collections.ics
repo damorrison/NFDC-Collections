@@ -6,23 +6,8 @@ METHOD:PUBLISH
 X-WR-CALNAME:♻️ NFDC Bin Collections - The Hummicks
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
-UID:nfdc-the-hummicks-20261109@local
-DTSTAMP:20261102T132755Z
-SUMMARY:🍽️♻️ Bins: Food\, Recycle
-DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
- cling caddy (weekly).\nRecycle 240L - Green-lid recycle bin (fortnightly).
-DTSTART;TZID=Europe/London:20261109T070000
-DTEND;TZID=Europe/London:20261109T080000
-TRANSP:TRANSPARENT
-BEGIN:VALARM
-ACTION:DISPLAY
-DESCRIPTION:Put bins out for tomorrow
-TRIGGER:-PT13H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:nfdc-the-hummicks-20261116@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️🗑️ Bins: Food\, General
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nGeneral 180L - Black-lid rubbish bin (fortnightly).
@@ -37,7 +22,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nfdc-the-hummicks-20261123@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️♻️ Bins: Food\, Recycle
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nRecycle 240L - Green-lid recycle bin (fortnightly).
@@ -52,7 +37,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nfdc-the-hummicks-20261130@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️🗑️🫙 Bins: Food\, General\, Glass
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nGeneral 180L - Black-lid rubbish bin (fortnightly).
@@ -68,7 +53,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nfdc-the-hummicks-20261207@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️♻️ Bins: Food\, Recycle
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nRecycle 240L - Green-lid recycle bin (fortnightly).
@@ -83,7 +68,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nfdc-the-hummicks-20261214@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️🗑️ Bins: Food\, General
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nGeneral 180L - Black-lid rubbish bin (fortnightly).
@@ -98,7 +83,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nfdc-the-hummicks-20261221@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️♻️ Bins: Food\, Recycle
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nRecycle 240L - Green-lid recycle bin (fortnightly).
@@ -113,7 +98,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nfdc-the-hummicks-20261228@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️🗑️🫙 Bins: Food\, General\, Glass
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nGeneral 180L - Black-lid rubbish bin (fortnightly).
@@ -129,7 +114,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nfdc-the-hummicks-20270104@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️♻️ Bins: Food\, Recycle
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nRecycle 240L - Green-lid recycle bin (fortnightly).
@@ -144,7 +129,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nfdc-the-hummicks-20270111@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️🗑️ Bins: Food\, General
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nGeneral 180L - Black-lid rubbish bin (fortnightly).
@@ -159,7 +144,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nfdc-the-hummicks-20270118@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️♻️ Bins: Food\, Recycle
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nRecycle 240L - Green-lid recycle bin (fortnightly).
@@ -174,7 +159,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nfdc-the-hummicks-20270125@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️🗑️🫙 Bins: Food\, General\, Glass
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nGeneral 180L - Black-lid rubbish bin (fortnightly).
@@ -190,12 +175,27 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:nfdc-the-hummicks-20270201@local
-DTSTAMP:20261102T132755Z
+DTSTAMP:20261109T135130Z
 SUMMARY:🍽️♻️ Bins: Food\, Recycle
 DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
  cling caddy (weekly).\nRecycle 240L - Green-lid recycle bin (fortnightly).
 DTSTART;TZID=Europe/London:20270201T070000
 DTEND;TZID=Europe/London:20270201T080000
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Put bins out for tomorrow
+TRIGGER:-PT13H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:nfdc-the-hummicks-20270208@local
+DTSTAMP:20261109T135130Z
+SUMMARY:🍽️🗑️ Bins: Food\, General
+DESCRIPTION:Area: The Hummicks.\n\nCollections:\nFood 23L - Brown food recy
+ cling caddy (weekly).\nGeneral 180L - Black-lid rubbish bin (fortnightly).
+DTSTART;TZID=Europe/London:20270208T070000
+DTEND;TZID=Europe/London:20270208T080000
 TRANSP:TRANSPARENT
 BEGIN:VALARM
 ACTION:DISPLAY
